@@ -1,0 +1,127 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #000;
+	color: #fff;
+}
+
+header {
+	text-align: center;
+}
+
+nav {
+	width: 100%;
+	margin: 0 -1%;
+}
+
+nav a{
+	display: block;
+	margin: 0 .5%;
+	width: 19%;
+	float: left;
+	background: azure;
+	text-align: center;
+	text-transform: capitalize;
+	padding: 2% 0;
+}
+
+.circle-cutout {
+	overflow: hidden;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.circle-cutout img {
+	display: block;
+	width: 100%;
+}
+
+.collapsed {
+	display: none;
+}
+
+.cta {
+	color: azure;
+	background: #393939;
+	font-size: 2.4rem;
+	padding: 10% 0;
+}
+
+.toggle-wrap {
+	display: flex;
+	justify-content: center;
+}
+
+.portfolio-toggle {
+	padding: 0;
+	border: none;
+	color: #fff;
+	position: relative;
+	line-height: 1;
+}
+
+.portfolio-toggle:after {
+	content: '\25BC';
+	font-size: 2rem;
+	z-index: 1;
+	top: 90%;
+	right: 50%;
+	position: absolute;
+	display: block;
+	transform: translateX(50%);
+}
+
+.content-item {
+	position: relative;
+}
+
+.content-item .circle-cutout {
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 90%;
+	position: absolute;
+}
+
+.content-item .top {
+	margin-top: 50%;
+	background: #333;
+}
+
+.content-item .top h3 {
+	text-align: center;
+	margin-top: 50%;
+	padding: 50% 0 25%;
+}
+
+
+section header,
+footer header {
+	text-align: center;
+	position: relative;
+}
+
+section header h2,
+footer header h2 {
+	display: inline-block;
+	padding: 1%;
+	margin-bottom: 0;
+	background: #000;
+	text-transform: uppercase;
+}
+
+section header:before,
+footer header:before {
+	content: '';
+	display: block;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	height: 20%;
+	background: azure;
+	z-index: -1;
+	position: absolute;
+}
