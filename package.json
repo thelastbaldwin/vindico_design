@@ -2,19 +2,37 @@
   "name": "vindico_design",
   "version": "1.0.0",
   "description": "homepage for vindico_design",
+  "keywords": [],
   "repository": {
     "type": "git",
     "url": "https://github.com/thelastbaldwin/vindico_design.git"
   },
-  "author": "",
-  "main": "index.js",
+  "author": "steve minor",
+  "main": "src/main.js",
   "scripts": {
-    "start": "browser-sync start --server 'src' -f 'src/**/*.html, src/**/*.js,src/**/*.css' --serveStatic 'src'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "start": "gulp"
   },
-  "keywords": [],
-  "license": "ISC",
+  "dependencies": {},
   "devDependencies": {
-    "browser-sync": "^2.18.13"
-  }
+    "babel-core": "^6.14.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.11.1",
+    "babel-register": "^6.14.0",
+    "babelify": "^7.3.0",
+    "bootstrap": "^4.0.0-beta.2",
+    "browser-sync": "^2.11.2",
+    "browserify": "^13.1.0",
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.2.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-sass": "^2.2.0",
+    "jquery": "^3.2.1",
+    "normalize-scss": "^7.0.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "license": "ISC"
 }
