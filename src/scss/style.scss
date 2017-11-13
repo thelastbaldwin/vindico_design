@@ -109,14 +109,24 @@ nav {
 }
 
 .portfolio-toggle:after {
-	content: '\25BC';
 	font-size: 2rem;
-	display: block;
-	transition: transform 1s ease-in-out;
 }
 
-.portfolio-toggle.active:after {
+.portfolio-toggle:after,
+.copy-toggle:after {
+	content: '\25BC';
+	display: block;
+	transition: transform 500ms ease-in-out;
+}
+
+.portfolio-toggle.active:after,
+.copy-toggle.active:after {
 	transform: rotateZ(180deg);
+}
+
+.copy-toggle:focus{
+	outline: none;
+	border: none;
 }
 
 .content-item {
@@ -156,6 +166,10 @@ nav {
 	border: none;
 	background: $middle-blue;
 	color: #fff;
+}
+
+.copy-toggle:after{
+	font-size: 1.4rem;
 }
 
 section, footer {
