@@ -58,7 +58,7 @@ gulp.task("serve", ()=>{
   });
 });
 
-gulp.task("build", ["build-css", "bundle-js"]);
+gulp.task("build", ["build-css", "bundle-js", "copy"]);
 
 
 // run jshint whenever a js file is updated

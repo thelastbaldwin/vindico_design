@@ -11,7 +11,7 @@ const CONFIG = {
     src : './src/scss/*.scss'
   },
   nodeModules: './node_modules',
-  publicPath : './public/',
+  publicPath : './docs/',
   build : {
     js: './build/js',
     css: './build/css'
